@@ -8,6 +8,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 
@@ -15,9 +16,13 @@ public class BasePage {
 		
 	public void alterarWifi(){
 		ScrollMenu();
-		clicar(By.xpath("//android.widget.Switch[6]"));
+//		getDriver().setConnection(Connection.AIRPLANE);
+		if(existeElementoPorTexto("Ativado")){
+			clicarPorTexto("Ativado");
+		}else{
+			clicarPorTexto("Desativado");
+		}
 		Scroll(0.95, 0.05);
-		//getDriver().setConnection(Connection.AIRPLANE);
 	}
 	
 	public void escreverBy(By by, String texto){
@@ -52,6 +57,11 @@ public class BasePage {
 	
 	public boolean existeElementoPorId(String id){
 		List<MobileElement> elementos = getDriver().findElements(By.id(id));
+		return elementos.size()>0;
+	}
+	
+	public boolean existeElementoBy(By by){
+		List<MobileElement> elementos = getDriver().findElements(by);
 		return elementos.size()>0;
 	}
 	
@@ -148,6 +158,21 @@ public class BasePage {
 	}
 	
 	public boolean obterMensagemSemInternet(){
-		return existeElementoPorTexto("Sem conexão com a internet.");
+		return existeElementoPorTexto("Sem conexão com a internet");
+	}
+	
+	public void clicarVoltar(){
+		clicar(MobileBy.AccessibilityId("Navegar para cima"));		
+	}
+	
+	public void voltarTela(){
+		MobileElement fim = getDriver().findElement(By.id("br.unifor.mobile:id/info_text"));
+		MobileElement inicio = getDriver().findElement(By.id("br.unifor.mobile:id/text_identify_user"));		
+		new TouchAction(getDriver())
+		.press(inicio)
+		.moveTo(fim)
+		.release()
+		.perform();		
+		clicar(MobileBy.AccessibilityId("Navegar para cima"));			
 	}
 }

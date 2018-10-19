@@ -28,9 +28,10 @@ public class DriverFactory {
 		desiredCapabilities.setCapability("automationName", "uiautomator2");
 //		desiredCapabilities.setCapability("appPackage", "br.unifor.mobile");
 //		desiredCapabilities.setCapability("appActivity","br.unifor.mobile.modules.sidebar.view.activity.SidebarActivity_");
-		desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\951547302\\workspace\\TestesDisciplinasEGrupos\\src\\main\\resources\\app-dev-debug (1).apk");
-		//desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\951547302\\workspace\\TestesDisciplinasEGrupos\\src\\main\\resources\\app-dev-debug.apk");
-				
+		desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\951547302\\workspace\\TestesDisciplinasEGrupos\\src\\main\\resources\\app-dev-debug (3).apk");
+//		desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\951547302\\workspace\\TestesDisciplinasEGrupos\\src\\main\\resources\\app-dev-debug (1).apk");
+//		desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\951547302\\workspace\\TestesDisciplinasEGrupos\\src\\main\\resources\\app-dev-debug.apk");
+//		desiredCapabilities.setCapability("chromedriverExecutable", "C:\\Selenium\\Driver\\chromedriver.exe");		
 		try {
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
 		} catch (MalformedURLException e) {

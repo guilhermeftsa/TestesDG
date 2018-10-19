@@ -14,4 +14,6 @@ public class AbasPage extends BasePage {
 	public void acessarAbaAulas(){
 		clicarPorTexto("AULAS");
 	}
+	
+
 }

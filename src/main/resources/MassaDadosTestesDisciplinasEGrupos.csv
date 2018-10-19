@@ -1,0 +1,52 @@
+deveVerificarDisciplinasAlunoComConexao_CT991, matricula, senha
+,1610358,11111111
+deveVerificarAlunoSemDisciplina_CT992, matricula, senha
+,951547302,11111111
+deveRealizarBuscaComResultado_Grupos_CT993, matricula, senha
+,951547302, 11111111
+deveRealizarBuscaComResultado_Disciplinas_CT993, matricula, senha
+,1610358,11111111
+deveRealizarBuscaSemResultado_CT994, matricula, senha
+,1610358,11111111
+deveVerificarAlunoAbaFrequenciaSemConexao_CT996, matricula, senha
+,1610358,11111111
+deveVerificarAlunoAbaAulasSemConexao_CT997, matricula, senha
+,1610358,11111111
+deveVerificarAlunoAbaDisciplinasComConexao_CT998, matricula, senha
+,1610358,11111111
+deveVerificarAlunoAbaFrequenciaComConexao_CT999, matricula, senha
+,1610358,11111111
+deveVerificarAlunoAbaAulaComConexao_CT1000, matricula, senha
+,1610358,11111111
+deveVerificarGrupos_CT1001, matricula, senha
+,951547302,11111111
+deveVerificarUsuarioSemGrupo_CT1002, matricula, senha
+,1610358,11111111
+deveVerificarAbaGruposComConexao_CT1005, matricula, senha
+,951547302,11111111
+deveVerificarGrupoAbaAulasSemConexao_CT1007, matricula, senha
+,951547302,11111111
+deveVerificarGrupoAbaAulasComConexao_CT1008, matricula, senha
+,951547302,11111111
+deveVerificarLecionadorAbaFrequenciaSemConexao_CT1011, matricula, senha
+,731545646,11111111
+deveVerificarLecionadorAbaAulasSemConexao_CT1012, matricula, senha
+,731545646,11111111
+deveVerificarLecionadorAbaDisciplinasComConexao_CT1013, matricula, senha
+,731545646,11111111
+deveVerificarAlunoAbaFrequenciaComConexao_CT1014, matricula, senha
+,731545646,11111111
+deveVerificarLecionadorAbaAulaComConexao_CT1023, matricula, senha
+,731545646,11111111
+deveVerificarDisciplinasLecionadorComConexao_CT1052, matricula, senha
+,731545646,11111111
+deveVerificarDisciplinasAlunoSemConexao_CT1055, matricula, senha
+,1610358,11111111
+deveVerificarDisciplinasSemConexao_CT1056, matricula, senha
+,1610358,11111111
+deveVerificarDisciplinasLecionadorSemConexao_CT1057, matricula, senha
+,731545646,11111111
+deveVerificarGruposMalSucedidoSemConexao_CT1058, matricula, senha
+,1610358,11111111
+deveVerificarGruposBemSucedidoSemConexao_CT1059, matricula, senha
+,951547302,11111111
